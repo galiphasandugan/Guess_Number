@@ -29,7 +29,7 @@ console.log(counter);
  }else{
     par.innerHTML= `HAKKINIZ KALMADI`
     sonuc.value = "game over ";
-    return input.innerHTML = `input.value`;
+    return input.value = input.value;
      
  }
   console.log(counter);
