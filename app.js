@@ -2,13 +2,14 @@ const buton = document.querySelector(".btn");
 const input = document.querySelector(".input");
 const sonuc = document.querySelector(".sonuc");
 const par = document.querySelector("p");
+const audio =document.querySelector("audio")
 const random = Math.floor(Math.random() *100) + 1
 console.log(random);
 
 let counter =7
 buton.addEventListener("click", () => {
 console.log(counter);
-
+audio.play()
 
  if(counter>0 && input.value>0 && input.value <100){
   console.log(input.value);
