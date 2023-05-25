@@ -2,22 +2,25 @@ const buton = document.querySelector(".btn");
 const input = document.querySelector(".input");
 const sonuc = document.querySelector(".sonuc");
 const par = document.querySelector("p");
-const random = Math.floor(Math.random() *100)
+const random = Math.floor(Math.random() *100) + 1
 console.log(random);
 
 let counter =7
 buton.addEventListener("click", () => {
 console.log(counter);
-console.log(input.value);
+
 
  if(counter>0 && input.value>0 && input.value <100){
-  if (input.value > random) {
-    sonuc.value = "sayıyı azalt";
-    input.value = "";
-  }
+  console.log(input.value);
+  console.log(random);
+
   if (input.value < random) {
     sonuc.value = "sayıyı artır";
-    input.value = "";
+    input.value = ""
+  }
+  if (input.value > random) {
+    sonuc.value = "sayıyı azalt";
+    input.value = ""
   }
   if (input.value == random) {
     sonuc.value = "KAZANDIN";
